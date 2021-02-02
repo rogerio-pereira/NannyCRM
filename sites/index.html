@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sarah Pereira - ChildCare</title>
+
+        <link rel="stylesheet" href="carousel/carousel.css">
+        <script src="carousel/carousel.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class='bg bgNuvem'>
+            <!--<div class='elefante'>&nbsp;</div>-->
+            <div class='content'>
+                <div class='img profile'>
+                    <img src='img/sarah-pereira.jpeg' alt='Sarah Pereira'>
+                </div>
+
+                <p>
+                    Olá sou a <strong>Sarah Pereira</strong><br/>
+                    <span class='big'>
+                        Eu cuido dos seus pequenos, para você ter um tempo com tranquilidade.
+                    </span>
+                </p>
+
+                <a href='sms:8134762556' class='primary mt'>
+                    Entrar em contato!
+                </a>
+            </div>
+        </div>
+
+        <div class='bg bgMar depoimentos'>
+            <div class='coverGray'>&nbsp;</div>
+            <div class='content'>
+                <h1>Depoimentos</h1>
+                <div id="carousel" class="owl-carousel content">
+                    <!--REpetir abaixo para carousel-->
+                    <div class='img testimony'>
+                        <div>
+                            <img src='img/sarah-pereira.jpeg' alt='Sarah Pereira'>
+                        </div>
+        
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto fuga culpa 
+                            delectus natus excepturi tempore saepe explicabo hic officia. Sint illo fugit voluptatibus 
+                            dolore quisquam ipsam suscipit temporibus asperiores quo!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            $(document).ready(function() {
+                $("#carousel").owlCarousel({
+                    slideSpeed : 300,
+                    paginationSpeed : 400,
+                    singleItem:true,
+                    autoPlay: 10000 //10s
+                });
+            });
+        </script>
+    </body>
+</html>
