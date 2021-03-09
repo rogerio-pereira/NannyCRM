@@ -168,6 +168,26 @@ class CategoryEventTest extends TestCase
     /**
      * @test
      */
+    public function aUserCanSeeACategoryEvent()
+    {
+        ActingAs::user();
+        $category = factory(CategoryEvent::class)->create();
+
+
+        $this->assertDatabaseHas('category_events', [
+            'id' => 1,
+            'name' => $category->name
+        ]);
+        $response = $this->get(route('events-category.show', 1));
+        $response->assertJson([
+            'id' => 1,
+            'name' => $category->name,
+        ]);
+    }
+
+    /**
+     * @test
+     */
     public function categoryEventCreateValidation()
     {
         ActingAs::user();
