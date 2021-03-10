@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './forms.css';
+
+body {
+    @apply bg-pink-200 h-screen w-screen;
+}
+
+div.view
+{
+    position: relative;
+    top: 60px;
+}
+
+#app div.nav
+{
+    @apply bg-pink-300 fixed w-screen flex py-4 px-12;
+}
+
+#app div.nav a
+{
+    @apply font-bold text-pink-900;
+}
+
+.btn
+{
+    @apply px-4 py-2 font-bold justify-center;
+}
+
+.btn-primary
+{
+    @apply bg-pink-800 text-pink-200;
+}

@@ -15,7 +15,7 @@ class UserSeeder extends Seeder
         factory(User::class)->create([
             'name' => 'Rogerio Pereira',
             'email' => 'rogerio@colmeiatecnologia.com.br',
-            'password' => '2y$10$C6UGs.Bn/0iMTOq4yBEc1uNW8tANToojqievAjxuETcZL9desUU/u'
+            'password' => '$2y$10$mpA12rJ7jFSmv3h0CkFAHuW3xDEDXS1KyKQmLvRZJQeISWDt8qYYi'
         ]);
     }
 }

@@ -1,0 +1,4 @@
+.input
+{
+    @apply block rounded-sm py-1 px-2 text-pink-900 my-4;
+}
